@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flight_price_predictor"
+version = "0.1.0"
+description = "Flight Price Prediction ML Pipeline"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [
+    { name = "Aniket Muthal", email = "aniketmuthal93@gmail.com" }
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+    "joblib",
+    "pyyaml",
+    "pyarrow",
+    "sqlalchemy",
+    "pymysql",
+    "python-box",
+    "python-dotenv"
+]
+
+[project.optional-dependencies]
+prod-extras = [
+    "dvc[gdrive]",
+    "mlflow",
+    "streamlit",
+    "gdown"
+]
+
+dev = [
+    "notebook",
+    "ipykernel",
+    "seaborn",
+    "xgboost",
+    "statsmodels",
+    "scipy"
+]
+
+[project.urls]
+Homepage = "https://github.com/Aniket-Muthal/flight-price-modeling-mlops"
+
+[tool.setuptools]
+package-dir = { "" = "src" }
+
+[tool.setuptools.packages.find]
+where = ["src"]
