@@ -1,0 +1,8 @@
+gdrive:
+  file_id: 18iC2Fsnl83EBxVPhGiRPpRpzIXTsP_rp
+  download_file_path: data/external/flights_raw.zip
+  extract_dir: data/external
+
+database:
+  data_dir: data/external
+  table_name: flight_prices
