@@ -1,0 +1,30 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/flight_price_predictor/components/data_ingestion.py
+    deps:
+    - path: .env
+      hash: md5
+      md5: 5035393fb80f2aa6d8b23a6b5a6bd1da
+      size: 94
+    - path: src/flight_price_predictor/components/data_ingestion.py
+      hash: md5
+      md5: eb47ac2f8b63505380ac1b6120593314
+      size: 2223
+    - path: src/flight_price_predictor/config/configuration.py
+      hash: md5
+      md5: 6a89f60885e23db02389f9ceaba2dbb6
+      size: 933
+    - path: src/flight_price_predictor/config/entity_config.py
+      hash: md5
+      md5: 674721c393d7dd88f4439c0e2bc4423a
+      size: 141
+    - path: src/flight_price_predictor/core/constants.py
+      hash: md5
+      md5: 29c5e736f3ae571dbf6a1840356fe25d
+      size: 4058
+    outs:
+    - path: data/raw/flight_price.csv
+      hash: md5
+      md5: 057e3043d5f7dfa51d73a14a53ec9096
+      size: 1107157
