@@ -1,0 +1,24 @@
+name: flights-dev
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - notebook
+  - ipykernel
+  - numpy
+  - pandas
+  - matplotlib
+  - seaborn
+  - statsmodels
+  - scipy
+  - scikit-learn
+  - xgboost
+  - pyarrow
+  - sqlalchemy
+  - pymysql
+  - pip
+  - pip:
+      - dvc[gdrive]
+      - mlflow
+      - gdown

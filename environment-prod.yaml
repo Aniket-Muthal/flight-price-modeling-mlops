@@ -1,0 +1,23 @@
+name: flights-prod
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - matplotlib
+  - scikit-learn
+  - joblib
+  - pyyaml
+  - pyarrow
+  - sqlalchemy
+  - pymysql
+  - python-box
+  - python-dotenv
+  - pip
+  - pip:
+      - dvc[gdrive]
+      - mlflow
+      - streamlit
+      - gdown
