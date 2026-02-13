@@ -1,0 +1,11 @@
+stages:
+  data_ingestion:
+    cmd: python src/flight_price_predictor/components/data_ingestion.py
+    deps:
+      - src/flight_price_predictor/components/data_ingestion.py
+      - src/flight_price_predictor/config/entity_config.py
+      - src/flight_price_predictor/config/configuration.py
+      - src/flight_price_predictor/core/constants.py
+      - .env
+    outs:
+      - data/raw/flight_price.csv
